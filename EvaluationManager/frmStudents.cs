@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace EvaluationManager {
-    public partial class Form1 : Form {
-        public Form1() {
+    public partial class frmStudents : Form {
+        public frmStudents() {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e) {
+        private void Form2_Load(object sender, EventArgs e) {
 
         }
     }

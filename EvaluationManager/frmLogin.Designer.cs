@@ -1,5 +1,5 @@
 ﻿namespace EvaluationManager {
-    partial class Form1 {
+    partial class frmLogin {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -38,7 +38,6 @@
             this.lblLozinka.Size = new System.Drawing.Size(44, 13);
             this.lblLozinka.TabIndex = 0;
             this.lblLozinka.Text = "Lozinka";
-            this.lblLozinka.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblKorIme
             // 
@@ -62,6 +61,7 @@
             this.txtLozinka.Name = "txtLozinka";
             this.txtLozinka.Size = new System.Drawing.Size(111, 20);
             this.txtLozinka.TabIndex = 3;
+            this.txtLozinka.UseSystemPasswordChar = true;
             // 
             // btnLogin
             // 
@@ -71,6 +71,7 @@
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Prijava";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // Form1
             // 
