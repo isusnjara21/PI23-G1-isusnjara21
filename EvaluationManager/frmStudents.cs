@@ -13,9 +13,13 @@ namespace EvaluationManager {
         public frmStudents() {
             InitializeComponent();
         }
-
-        private void Form2_Load(object sender, EventArgs e) {
-
+        private void ShowStudents() {
+            StudentRepository repository = new StudentRepository();
+            List<Student> students = repository.GetStudents();
+            dataGridView1.DataSource = students;
+        }
+        private void frmStudents_Load(object sender, EventArgs e) {
+            ShowStudents();
         }
     }
 }
