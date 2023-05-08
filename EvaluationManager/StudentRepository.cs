@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 using DBLayer;
 
 namespace EvaluationManager {
-    public class StudentRepository {
-        private Student CreateObject(SqlDataReader reader) {
+    public static class StudentRepository {
+        private static Student CreateObject(SqlDataReader reader) {
             Student student = new Student();
 
             student.Id = Convert.ToInt32(reader["Id"].ToString());
@@ -20,7 +20,7 @@ namespace EvaluationManager {
             return student;
         }
 
-        public Student GetStudent(int id) {
+        public static Student GetStudent(int id) {
             Student student = null;
             DB.OpenConnection();
             SqlDataReader reader = DB.GetDataReader($"SELECT * FROM Students WHERE id = {id}");
@@ -33,7 +33,7 @@ namespace EvaluationManager {
             return student;
         }
 
-        public List<Student> GetStudents() {
+        public static List<Student> GetStudents() {
             List<Student> students = new List<Student>();
             DB.OpenConnection();
             SqlDataReader reader = DB.GetDataReader("SELECT * FROM Students");
