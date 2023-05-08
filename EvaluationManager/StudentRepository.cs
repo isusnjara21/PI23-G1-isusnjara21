@@ -34,7 +34,7 @@ namespace EvaluationManager {
         }
 
         public List<Student> GetStudents() {
-            List<Student> students = new List<Student>;
+            List<Student> students = new List<Student>();
             DB.OpenConnection();
             SqlDataReader reader = DB.GetDataReader("SELECT * FROM Students");
             while(reader.Read()) {
