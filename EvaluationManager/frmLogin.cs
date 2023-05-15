@@ -12,8 +12,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 namespace EvaluationManager {
     public partial class frmLogin : Form {
 
-        string username = "nastavnik";
-        string password = "test";
+        public static Teacher LoggedTeacher { get; set; }
         public frmLogin() {
             InitializeComponent();
         }
@@ -26,8 +25,11 @@ namespace EvaluationManager {
                 MessageBox.Show("Lozinka nije unesena!", "Problem", MessageBoxButtons.OK,
                 MessageBoxIcon.Error);
             } else {
-                if (txtKorIme.Text == username && txtLozinka.Text == password) {
+                LoggedTeacher = TeacherRepository.GetTeacher(txtKorIme.Text);
+
+                if (LoggedTeacher != null && LoggedTeacher.CheckPassword(txtLozinka.Text)) {
                     frmStudents frmStudents = new frmStudents();
+                    frmStudents.Text = $"{LoggedTeacher.FirstName} {LoggedTeacher.LastName}";
                     Hide();
                     frmStudents.ShowDialog();
                     Close();
