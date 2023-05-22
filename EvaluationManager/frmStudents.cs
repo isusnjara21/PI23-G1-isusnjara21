@@ -33,7 +33,7 @@ namespace EvaluationManager {
         }
 
         private void btnGenReport_Click(object sender, EventArgs e) {
-            var form = new FrmFinalReport();
+            var form = new frmFinalReport();
             form.ShowDialog();
         }
     }
