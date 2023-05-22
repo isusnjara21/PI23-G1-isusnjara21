@@ -30,5 +30,9 @@ namespace EvaluationManager {
             var results = GenerateStudentReport();
             dgvResults.DataSource = results;
         }
+
+        private void btnClose_Click(object sender, EventArgs e) {
+            Close();
+        }
     }
 }
