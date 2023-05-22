@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace EvaluationManager {
-    internal class StudentReportView {
+    public class StudentReportView {
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string K1 { get; set; }
