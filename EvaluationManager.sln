@@ -5,6 +5,10 @@ VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvaluationManager", "EvaluationManager\EvaluationManager.csproj", "{F22DA930-3776-4112-8F98-3F79504FB109}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBLayer", "DBLayer\DBLayer.csproj", "{A0C45BC0-EF18-4EE8-9E62-C92E0CB8A3D0}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Installer", "Installer\Installer.vdproj", "{B82AFE9B-F2CA-4F3E-9CF8-785832EE1EE5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,12 @@ Global
 		{F22DA930-3776-4112-8F98-3F79504FB109}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F22DA930-3776-4112-8F98-3F79504FB109}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F22DA930-3776-4112-8F98-3F79504FB109}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0C45BC0-EF18-4EE8-9E62-C92E0CB8A3D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0C45BC0-EF18-4EE8-9E62-C92E0CB8A3D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0C45BC0-EF18-4EE8-9E62-C92E0CB8A3D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0C45BC0-EF18-4EE8-9E62-C92E0CB8A3D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B82AFE9B-F2CA-4F3E-9CF8-785832EE1EE5}.Debug|Any CPU.ActiveCfg = Debug
+		{B82AFE9B-F2CA-4F3E-9CF8-785832EE1EE5}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
